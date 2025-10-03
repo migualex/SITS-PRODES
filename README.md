@@ -2,7 +2,11 @@
 
 The sits package uses satellite image time series for land classification, using a time-first, space-later approach. In the data preparation part, collections of big Earth observation images are organized as data cubes. Each spatial location of a data cube is associated with a time series. Locations with known labels are used to train a machine learning algorithm, which classifies all time series of a data cube, as shown below
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/9a1d0a26-0fd4-4df8-a76e-76535dbced7b" />
+<p align="center">
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/9a1d0a26-0fd4-4df8-a76e-76535dbced7b" />
+  <br>
+  <em>Figure 2: Example of Amazon time series analysis</em>
+</p>
 
 The sits API is a set of functions that can be chained to create a workflow for land classification. At its heart, the sits package has eight functions:
 
@@ -15,4 +19,10 @@ From a non-regular data_cube create a regular one, using sits_regularize(). Regu
 6) Remove outliers in a probability data cube using sits_smooth().
 7) Use sits_label_classification() to produce a thematic map from a smoothed probability cube.
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/35cb5a74-8ed1-47f5-beca-1e38f5b235cf" />
+<p align="center">
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/35cb5a74-8ed1-47f5-beca-1e38f5b235cf" />
+</p>
+
+All thanks to the Brazil Data Cube group for the support.
+
+Source: Rolf Simoes, Gilberto Camara, Gilberto Queiroz, Felipe Souza, Pedro R. Andrade, Lorena Santos, Alexandre Carvalho, and Karine Ferreira. Satellite Image Time Series Analysis for Big Earth Observation Data. Remote Sensing, 13, p. 2428, 2021.
