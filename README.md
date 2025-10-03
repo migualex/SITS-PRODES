@@ -1,3 +1,5 @@
+# Satellite Image Time Series (SITS) for Amazon Analysis
+
 The sits package uses satellite image time series for land classification, using a time-first, space-later approach. In the data preparation part, collections of big Earth observation images are organized as data cubes. Each spatial location of a data cube is associated with a time series. Locations with known labels are used to train a machine learning algorithm, which classifies all time series of a data cube, as shown below
 
 <img width="1093" height="904" alt="image" src="https://github.com/user-attachments/assets/9a1d0a26-0fd4-4df8-a76e-76535dbced7b" />
