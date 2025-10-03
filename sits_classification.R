@@ -119,7 +119,7 @@ max_ndwi_cube <- sits_reduce(cube_select2,
     progress = TRUE
 )
 plot(max_ndwi_cube, band = "NDWIMAX")
-#################################################################################################v
+#################################################################################################
 # 3.3. Cube exploration:
 
 # Select bands from the cube
@@ -144,7 +144,7 @@ last_date <- timeline[length(timeline)]
 # Corresponds to the index of the last image in the series
 cat("Last date of the cube:\n")
 print(last_date)
-
+#################################################################################################
 # 4. Sample analysis:
 # Import the training sample set with the classes of interest
 sample_path <- samp_path
@@ -180,8 +180,8 @@ samples_sf2 <- sits_reduce_imbalance(
 
 # Show summary of the balanced time series dataset
 summary(samples_sf2)
-
-#### 5.1. Sample analysis - Extracting time series from the data cube:
+#################################################################################################
+# 5.1. Sample analysis - Extracting time series from the data cube:
 # Extract time series for collected samples
 samples_rondonia_2024 <- sits_get_data(
                       cube = cube_select,
@@ -255,6 +255,7 @@ som_eval_new
 
 # Plot evaluation results
 plot(som_eval_new)
+#################################################################################################
 # 6. Classification models:
 # Random Forest model training
 # Random seed:
